@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SJ Portfolio</title>
+    <base href="/" />
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <my-app>loading</my-app>
+    <div id="_templates">
+        <script type="text/ng-template" id="rootcomponent.html">
+
+    
+                    <div class="jombotron" id="header-row1">
+                            <div class="container">
+                                    <div class="row">
+                                        <span class="col-lg-9">
+                                            <a id="envelope-icon"><span class="glyphicon glyphicon-envelope"></span></a>
+                                        </span>
+
+                                        <span class="col-lg-3">
+                                            <div class="dropdown">
+                                                <button class="glyphicon glyphicon-option-vertical dropbtn"></button>
+                                                    <div class="dropdown-content">
+                                                        <a href="https://github.com/sjeksani" target="_blank"><span class="fa fa-github"></span>GitHub</a>
+                                                        <a href="https://www.linkedin.com/in/sharath-jeksani" target="_blank"><span class="fa fa-linkedin"></span>Linkedin</a>
+                                                        <a href="https://twitter.com/sjeksanii" target="_blank"><span class="fa fa-twitter"></span>Twitter</a>
+                                                    </div>
+                                            </div>
+                                        </span>
+
+                                    </div>
+                            </div>
+                    </div>        
+        
+            <div id="header-row2">
+               
+                    <div class="header-links">
+                        <a id="my-name" routerLink="/home" routerLinkActive="active">Sharath Jeksani</a>
+                    </div>
+                    <div class="header-links">
+                        <a routerLink="/home" routerLinkActive="active">Home</a>
+                    </div>
+                    <div class="header-links">
+                        <a routerLink="/about">About</a>
+                    </div>
+                    <div class="header-links">
+                        <a routerLink="/skills">Skills</a>
+                    </div>
+                    <div class="header-links">
+                        <a routerLink="/experience">Experience</a>
+                    </div>
+                    <div class="header-links">
+                        <a routerLink="/contact">Contact</a>
+                    </div>
+                    <div class="after-box">
+                    </div>
+              
+            </div>
+
+            <router-outlet></router-outlet>
+
+
+            <footer class="footer">
+                <div class="copyright">Copyright © Sharath Jeksani. All Rights Reserved.</div>
+            </footer>
+            
+      </script>
+
+        <script type="text/ng-template" id="home-component.html">
+        <div class="home-maincontent">
+            
+            <div class="card">
+                <img src="assets/images/mypicture.jpg" alt="sharath-jeksani" style="width:100%">
+                <h1 class="title uppercase">Sharath Jeksani</h1>
+                <h4 class="role uppercase">Front End Engineer</h4>
+                
+                <ul class="list-unstyled mb-0">
+                   
+                    <a href="https://github.com/sjeksani" target="_blank" class="icons">
+                        <span class="fa fa-github"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sharath-jeksani" target="_blank" class="icons">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                    <a href="mailto:sharathjeksani@gmail.com" class="icons">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a href="https://twitter.com/sjeksanii" target="_blank" class="icons">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                </ul>
+                <p><button mat-raised-button color="primary">Contact</button></p>
+              </div>
+
+              <div class="description">
+                    <h3>Hello, Good to see you here! </h3> 
+                    <h5>
+                    I am Sharath Jeksani. I am a senior front end developer with over 9 years of proven experience in the tech field.
+                    My Primary skills are JavaScript, ES5/ES6, AngularJS, Angular 2+, TypeScript, AJAX, jQuery, Bootstrap.
+                    </h5>
+              </div>
+        </div>
+
+      </script>
+
+        <script type="text/ng-template" id="my-skills.html">
+        <p>My Skills</p>
+      </script>
+
+
+        <script type="text/ng-template" id="about-component.html">
+        <p>About Me</p>
+        <p>my name is sharath jeksani</p>
+      </script>
+
+        <script type="text/ng-template" id="experience-component.html">
+        <p>My Experience</p>
+        <p>My Experience is below </p>
+    </script>
+
+        <script type="text/ng-template" id="contact-component.html">
+      <p>My Contact</p>
+    </script>
+
+    </div>
+<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+
+</html>
